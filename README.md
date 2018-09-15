@@ -2,6 +2,7 @@
 
 ### (TLDR:)Exercise instructions:
 - You should not patch the `main.run` method itself (ie `main.run = lambda: print(expected output)`)
+- You should not use any external or standard python library
 - Implement the `test_main.set_up_mocks` function so that the `python3 test_main.py` command prints:
 
 ```
