@@ -1,8 +1,7 @@
 ## Namespace python exercise
 
-### (TLDR:)Exercise instructions:
-- You should not patch the `main.run` method itself (ie `main.run = lambda: print(expected output)`)
-- You should not use any external or standard python library
+### TLDR: Exercise instructions:
+- Clone the repo
 - Implement the `test_main.set_up_mocks` function so that the `python3 test_main.py` command prints:
 
 ```
@@ -46,7 +45,8 @@ this_should_work_the_same --> DO NOT MOCK ME
 mock_4 --> mock_4
 
 ```
-
+- You should not patch the `main.run` method itself (ie `main.run = lambda: print(expected output)`)
+- You should not use any external or standard python library
 
 **Set Up:**
 - I wrote a simple python `package` with one submodule `module1.py`  with different kind of objects:
@@ -68,7 +68,7 @@ mock_4 --> mock_4
 
 - I wrote a `test_main.py` where I execute this function:
 
-I you execute the main.run() with `python3 test_main.py` :
+I you execute the main.run() with `python3 test_main.py`  you should get the following output:
 
 ```
 my_function --> mock_1
