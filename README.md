@@ -1,4 +1,7 @@
 ## Namespace python exercise
+### Why
+- I realised that most issues encountered by developers while trying to write python unit tests are due to a misunderstanding about how the library `unittest.mock` works and especially the `patch`function. This exercise aims to implement the `patch` logic without using any libraries.
+- You will need to patch python classes and modules
 
 ### TLDR: Exercise instructions:
 - Clone the repo
@@ -48,8 +51,8 @@ mock_4 --> mock_4
 - You should not patch the `main.run` method itself (ie `main.run = lambda: print(expected output)`)
 - You should not use any external or standard python library
 
-**Set Up:**
-- I wrote a simple python `package` with one submodule `module1.py`  with different kind of objects:
+**Context:**
+- A simple python `package` with one submodule `module1.py`  with different kind of objects:
     - one constant
     - one function
     - one class with
@@ -58,13 +61,13 @@ mock_4 --> mock_4
        - two method
        - one static method
 
-- I then wrote a `main.py` where I:
-   - imported different things:
+- A `main.py` that:
+   - import different things:
       - import the package
       - import the submodule
       - import the python objects from the `package/__init__.py` files
       - import the python objects from the `module1.py` files
-   - And I printed the results of all the methods and object in the `run()` function of the main module:
+   - a `run` function that prints the results of all the methods and object:
 
 - I wrote a `test_main.py` where I execute this function:
 
